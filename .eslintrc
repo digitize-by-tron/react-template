@@ -1,0 +1,32 @@
+{
+  "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true,
+          "modules": true,
+          "experimentalObjectRestSpread": true
+      }
+  },
+  "plugins": [
+      "react",
+      "jest"
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+      "comma-dangle": 0,
+      "no-console": 0,
+      "no-global-assign": ["error", {"exceptions": ["Object"]}]
+  },
+  "settings": {
+      "react": {
+          "pragma": "React",
+          "version": "^17.0.2"
+      }
+  }, 
+  "env": {
+    "jest":true,
+    "browser": true,
+    "node": true
+  }
+}
